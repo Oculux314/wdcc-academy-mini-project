@@ -1,10 +1,6 @@
-export type Blog = {
-  slug: string;
-  title: string;
-  content: string;
-};
+import { Blog } from "@/types/Blog";
 
-export const blogs = [
+export const blogs: Blog[] = [
   {
     slug: "ai-disclaimer",
     title: "AI Disclaimer",

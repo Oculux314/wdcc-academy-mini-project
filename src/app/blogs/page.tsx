@@ -1,8 +1,19 @@
-export default function Blogs() {
+import { Blog } from "@/types/Blog";
+
+export default async function Blogs() {
+  const res = await fetch("http://localhost:3000/api/blogs");
+  const blogs = (await res.json()) as Blog[];
+
   return (
-    <div>
+    <main>
       <h1>Blogs</h1>
-      <p>/blogs</p>
-    </div>
+      <ul>
+        {blogs.map((blog) => (
+          <li className="list-disc ml-10" key={blog.slug}>
+            <a href={`/blogs/${blog.slug}`}>{blog.title}</a>
+          </li>
+        ))}
+      </ul>
+    </main>
   );
 }
