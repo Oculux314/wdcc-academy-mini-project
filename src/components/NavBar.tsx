@@ -8,8 +8,13 @@ export default function NavBar() {
       <ul className="flex items-center gap-10">
         <li className="mr-auto">
           <Link href="/">
-            <Image src={pfp} alt="Oculux" className="rounded-full h-8 w-8" />
+            <Image
+              src={pfp}
+              alt="Oculux"
+              className="rounded-full h-8 w-8 inline mr-4"
+            />
           </Link>
+          <span>Nate&apos;s Blog Site</span>
         </li>
         <li>
           <Link href="/">Home</Link>
