@@ -1,3 +1,8 @@
 export default function Home() {
-  return <p>Academy</p>;
+  return (
+    <div>
+      <h1>Home</h1>
+      <p>/</p>
+    </div>
+  );
 }
