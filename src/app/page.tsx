@@ -1,4 +1,4 @@
-export default function Home() {
+export default function HomePage() {
   return (
     <main className="h-full grid grid-cols-4 grid-rows-4 gap-5 p-5">
       <div className="home-div border-red-500 col-span-full">

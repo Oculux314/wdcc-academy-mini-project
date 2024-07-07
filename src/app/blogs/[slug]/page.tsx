@@ -1,8 +1,13 @@
-export default function Blog({ params }: { params: { slug: string } }) {
+import { Blog } from "@/types/Blog";
+
+export default async function BlogPage({ params }: { params: { slug: string } }) {
+  const res = await fetch(`http://localhost:3000/api/blogs/${params.slug}`);
+  const blogs = (await res.json()) as Blog;
+
   return (
-    <div>
-      <h1>Blog</h1>
-      <p>/blogs/{params.slug}</p>
-    </div>
+    <main>
+      <h1>{blogs.title}</h1>
+      <p>{blogs.content}</p>
+    </main>
   );
 }
