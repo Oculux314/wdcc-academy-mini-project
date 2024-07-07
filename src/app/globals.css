@@ -6,6 +6,18 @@
   a {
     @apply text-blue-600 hover:text-blue-800;
   }
+
+  h1 {
+    @apply text-3xl font-bold mb-4;
+  }
+
+  main {
+    @apply m-10;
+  }
+
+  li {
+    @apply my-2;
+  }
 }
 
 @layer utilities {
