@@ -6,6 +6,8 @@ export default function InstructionsPage() {
   return (
     <main>
       <h1>Instructions</h1>
+      <p>Make this website!</p>
+      <br />
       <p>You can get started like we did last Friday:</p>
       <Image src={setup} alt="setup instructions" />
       <p>

@@ -1,3 +1,4 @@
+import ConsoleMessage from "@/components/ConsoleMessage";
 import NavBar from "@/components/NavBar";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -26,6 +27,7 @@ export default function RootLayout({
       <body className={`${inter.className} h-lvh flex flex-col`}>
         <NavBar />
         {children}
+        <ConsoleMessage />
       </body>
     </html>
   );
